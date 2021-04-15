@@ -6,7 +6,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)  # not necessary, but encouraged
 project(demo CXX)
 
 #include node headers
-#include_directories($ENV{NODE_HEADERS})
 include_directories(${CMAKE_JS_INC} $ENV{NODE_HEADERS})
 message("$ENV{NODE_HEADERS}")
 
