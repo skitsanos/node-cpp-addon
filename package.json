@@ -1,0 +1,19 @@
+{
+  "name": "demo1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+    "name": "Skitsanos",
+    "url": "https://skitsanos.com"
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "compile": "cmake-js compile"
+  },
+  "cmake-js": {
+    "runtime": "node",
+    "runtimeVersion": "15.0.0",
+    "arch": "x64"
+  }
+}
