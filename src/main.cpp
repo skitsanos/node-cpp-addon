@@ -16,8 +16,7 @@ namespace demo {
 
     void Method(const FunctionCallbackInfo<Value> &args) {
         Isolate *isolate = args.GetIsolate();
-        args.GetReturnValue().Set(String::NewFromUtf8(
-                isolate, "world").ToLocalChecked());
+        args.GetReturnValue().Set(String::NewFromUtf8(isolate, "world").ToLocalChecked());
     }
 
     void Initialize(Local<Object> exports) {

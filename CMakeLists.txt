@@ -6,8 +6,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)  # not necessary, but encouraged
 project(demo CXX)
 
 #include node headers
+message("headers: $ENV{NODE_HEADERS}")
 include_directories(${CMAKE_JS_INC} $ENV{NODE_HEADERS})
-message("$ENV{NODE_HEADERS}")
+
 
 file(GLOB SOURCE_FILES "./src/*.cpp" "./src/*.h")
 

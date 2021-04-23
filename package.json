@@ -9,7 +9,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "compile": "cmake-js compile"
+    "compile": "cmake-js compile",
+    "xmake": "rm -rf ./build && xmake -r -v",
+    "start": "node ./src-js/index.js"
   },
   "cmake-js": {
     "runtime": "node",
